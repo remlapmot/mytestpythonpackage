@@ -1,3 +1,6 @@
 [project]
 name = "mytestpackage"
 version = "0.0.1"
+dependencies = [
+    "pytest>=8.3.4",
+]

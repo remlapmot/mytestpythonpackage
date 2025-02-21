@@ -1,6 +1,16 @@
 [project]
 name = "mytestpackage"
 version = "0.0.1"
+authors = [
+  { name="Tom Palmer", email="remlapmot@hotmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
 dependencies = [
     "pytest>=8.3.4",
 ]
+
+[project.urls]
+Homepage = "https://github.com/remlapmot/mytestpythonpackage"
+Issues = "https://github.com/remlapmot/mytestpythonpackage/issues"

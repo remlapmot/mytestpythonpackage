@@ -35,6 +35,10 @@ A demo repo to show the structure of a Python package
   ```sh
   uv run pytest tests/test_f.py
   ```
+* Dectivate the venv
+  ```sh
+  deactivate
+  ```
 
 ## TODO
 

@@ -1,0 +1,52 @@
+# From commit b67b8f35f9d2a7816611d7350cebbfb596da7dcc
+mytestpythonpackage on  main [!] is 📦 v0.0.1 via 🐍 v3.13.2
+❯ just lint
+uv run ruff check
+mytestpackage/__init__.py:2:39: F401 `mytestpackage.myfunctions.say_goodbye` imported but unused; consider removing, adding to `__all__`, or using a redundant alias
+  |
+2 | from mytestpackage.myfunctions import say_goodbye
+  |                                       ^^^^^^^^^^^ F401
+3 | from mytestpackage.myfunctions import f
+4 | from mytestpackage.myimportedfns import myrand
+  |
+  = help: Use an explicit re-export: `say_goodbye as say_goodbye`
+
+mytestpackage/__init__.py:3:39: F401 `mytestpackage.myfunctions.f` imported but unused; consider removing, adding to `__all__`, or using a redundant alias
+  |
+2 | from mytestpackage.myfunctions import say_goodbye
+3 | from mytestpackage.myfunctions import f
+  |                                       ^ F401
+4 | from mytestpackage.myimportedfns import myrand
+  |
+  = help: Use an explicit re-export: `f as f`
+
+mytestpackage/__init__.py:4:41: F401 `mytestpackage.myimportedfns.myrand` imported but unused; consider removing, adding to `__all__`, or using a redundant alias
+  |
+2 | from mytestpackage.myfunctions import say_goodbye
+3 | from mytestpackage.myfunctions import f
+4 | from mytestpackage.myimportedfns import myrand
+  |                                         ^^^^^^ F401
+5 |
+6 | def say_hello():
+  |
+  = help: Use an explicit re-export: `myrand as myrand`
+
+tests/test_say_goodbye.py:4:29: E711 Comparison to `None` should be `cond is None`
+  |
+3 | def test_say_goodbye():
+4 |     assert say_goodbye() == None
+  |                             ^^^^ E711
+  |
+  = help: Replace with `cond is None`
+
+tests/test_say_hello.py:4:27: E711 Comparison to `None` should be `cond is None`
+  |
+3 | def test_say_hello():
+4 |     assert say_hello() == None
+  |                           ^^^^ E711
+  |
+  = help: Replace with `cond is None`
+
+Found 5 errors.
+No fixes available (2 hidden fixes can be enabled with the `--unsafe-fixes` option).
+error: Recipe `lint` failed on line 12 with exit code 1

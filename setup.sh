@@ -2,6 +2,9 @@ uv venv --python 3.13
 
 # Make package skeleton
 
+# Install dependencies if pyproject.toml exists
+uv sync
+
 # have python reload package on file saves
 uv pip install -e .
 

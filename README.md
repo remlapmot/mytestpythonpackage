@@ -41,7 +41,7 @@ A demo repo to show the structure of a Python package
 - [x] add a justfile with useful recipes
 - [x] import function from another package and add depdendencies to pyproject.toml
 - [x] write helpfile using docstrings (triple quotes `"""`)
-- [ ] accompanying website
+- [ ] accompanying website (options: [Sphinx](https://www.sphinx-doc.org/en/master/), [pdoc](https://pdoc.dev/), [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/))
 - [x] unexported function: seems to be rarely done
   ```python
   from math import sqrt as _sqrt

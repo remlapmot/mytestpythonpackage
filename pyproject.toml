@@ -14,3 +14,8 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/remlapmot/mytestpythonpackage"
 Issues = "https://github.com/remlapmot/mytestpythonpackage/issues"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+]

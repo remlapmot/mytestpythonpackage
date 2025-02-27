@@ -12,8 +12,12 @@ A demo repo to show the structure of a Python package
 * Activate it
   ```sh
   source .venv/bin/activate
+  # On Windows run: .\venv\Scripts\activate
   ```
-* Install dependencies
+* Install dependencies (from _pyproject.yaml_)
+  ```sh
+  uv sync
+  ```
 * Setup package for reload on every file save
   ```sh
   uv pip install -e .

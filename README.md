@@ -40,7 +40,10 @@ A demo repo to show the structure of a Python package
 
 - [x] add a justfile with useful recipes
 - [x] import function from another package and add depdendencies to pyproject.toml
-- [ ] write helpfile using docstrings (triple quotes `"""`)
+- [x] write helpfile using docstrings (triple quotes `"""`)
 - [ ] accompanying website
-- [ ] unexported function
+- [x] unexported function: seems to be rarely done
+  ```python
+  from math import sqrt as _sqrt
+  ```
 - [ ] Setup linting and formatting ([ruff](https://docs.astral.sh/ruff/))

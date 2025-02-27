@@ -5,6 +5,11 @@ A demo repo to show the structure of a Python package
 ## Setup
 
 * Clone the repo
+* On macOS install [Homebrew](https://brew.sh/) system package manager, instructions on website homepage
+* Use Homebrew to install `uv` and `just`
+  ```sh
+  brew install uv just
+  ```
 * Setup a venv using `uv`
   ```sh
   uv venv --python 3.13

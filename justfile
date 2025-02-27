@@ -8,3 +8,7 @@ dev:
     uv pip install -e .
 test:
     uv run pytest
+lint:
+    uv run ruff check
+fix:
+    uv run ruff check --fix

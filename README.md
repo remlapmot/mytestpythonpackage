@@ -27,11 +27,11 @@ A demo repo to show the structure of a Python package
   # Add pytest to project
   uv add DEPENDENCY
   ```
-* Run all pytest tests
+* Run all pytest tests (must have installed package first)
   ```sh
   uv run pytest
   ```
-* Run a single test file
+* Run a single test file (must have installed package first)
   ```sh
   uv run pytest tests/test_f.py
   ```

@@ -11,9 +11,9 @@ uv pip install -e .
 # Add pytest to project
 uv add pytest
 
-# Run all pytest tests
+# Run all pytest tests (must have installed package first)
 uv run pytest
 
-# Run a single test file
+# Run a single test file (must have installed package first)
 uv run pytest tests/test_f.py
 python3 -m pytest tests/test_f.py

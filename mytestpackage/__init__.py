@@ -5,3 +5,6 @@ from mytestpackage.myimportedfns import myrand as myrand
 
 def say_hello():
     print("Hello, World")
+
+# Unsure whether this is required
+__all__ = ["say_goodbye", "say_hello", "f", "myrand"]

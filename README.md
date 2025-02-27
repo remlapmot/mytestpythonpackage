@@ -22,6 +22,19 @@ A demo repo to show the structure of a Python package
   ```sh
   uv pip install -e .
   ```
+* Add dependency to project
+  ```sh
+  # Add pytest to project
+  uv add DEPENDENCY
+  ```
+* Run all pytest tests
+  ```sh
+  uv run pytest
+  ```
+* Run a single test file
+  ```sh
+  uv run pytest tests/test_f.py
+  ```
 
 ## TODO
 

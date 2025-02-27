@@ -63,4 +63,4 @@ A demo repo to show the structure of a Python package
   ```python
   from math import sqrt as _sqrt
   ```
-- [ ] Setup linting and formatting ([ruff](https://docs.astral.sh/ruff/))
+- [x] Setup linting and formatting ([ruff](https://docs.astral.sh/ruff/))

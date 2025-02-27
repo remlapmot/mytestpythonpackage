@@ -10,6 +10,10 @@ A demo repo to show the structure of a Python package
   ```sh
   brew install uv just
   ```
+* On first run - can create package skeleton (I did it by hand - hence very slightly different)
+  ```sh
+  uv init --lib mytestpackage
+  ```
 * Setup a venv using `uv`
   ```sh
   uv venv --python 3.13

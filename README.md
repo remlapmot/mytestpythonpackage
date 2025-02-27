@@ -31,10 +31,14 @@ A demo repo to show the structure of a Python package
   ```sh
   uv pip install -e .
   ```
-* Add dependency to project
+* Add dependency used within package code
   ```sh
   # Add pytest to project
   uv add DEPENDENCY
+  ```
+* Add development dependency
+  ```sh
+  uv add --dev pytest
   ```
 * Run all pytest tests (must have installed package first)
   ```sh

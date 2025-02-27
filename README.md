@@ -16,7 +16,7 @@ A demo repo to show the structure of a Python package
 * Install dependencies
 * Setup package for reload on every file save
   ```sh
-  pip install -e .
+  uv pip install -e .
   ```
 
 ## TODO

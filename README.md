@@ -40,7 +40,7 @@ A demo repo to show the structure of a Python package
 
 - [x] add a justfile with useful recipes
 - [x] import function from another package and add depdendencies to pyproject.toml
-- [ ] write helpfile
+- [ ] write helpfile using docstrings (triple quotes `"""`)
 - [ ] accompanying website
 - [ ] unexported function
 - [ ] Setup linting and formatting ([ruff](https://docs.astral.sh/ruff/))

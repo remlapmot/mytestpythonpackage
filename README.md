@@ -64,3 +64,4 @@ A demo repo to show the structure of a Python package
   from math import sqrt as _sqrt
   ```
 - [x] Setup linting and formatting ([ruff](https://docs.astral.sh/ruff/))
+- [x] Add some type hints (function arguments and return values, from Python 3.5)

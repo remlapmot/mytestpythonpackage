@@ -3,7 +3,7 @@ from mytestpackage.myfunctions import f as f
 from mytestpackage.myimportedfns import myrand as myrand
 
 
-def say_hello():
+def say_hello() -> None:
     print("Hello, World")
 
 

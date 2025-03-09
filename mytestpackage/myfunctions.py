@@ -1,6 +1,6 @@
-def say_goodbye():
+def say_goodbye() -> None:
     print("Goodbye")
 
 
-def f():
+def f() -> int:
     return 3

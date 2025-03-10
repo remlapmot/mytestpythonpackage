@@ -33,7 +33,6 @@ A demo repo to show the structure of a Python package
   ```
 * Add dependency used within package code
   ```sh
-  # Add pytest to project
   uv add DEPENDENCY
   ```
 * Add development dependency

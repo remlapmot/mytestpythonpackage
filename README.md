@@ -39,7 +39,7 @@ A demo repo to show the structure of a Python package
   ```sh
   uv add --dev pytest
   ```
-* Run all pytest tests (must have installed package first)
+* Run all pytest tests (must have installed package with `just dev` first)
   ```sh
   uv run pytest
   ```

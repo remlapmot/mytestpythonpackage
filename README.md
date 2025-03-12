@@ -2,17 +2,49 @@
 
 A demo repo to show the structure of a Python package
 
-## Setup
+## Setting up uv and just
 
-* Clone the repo
-* On macOS install [Homebrew](https://brew.sh/) system package manager, instructions on website homepage
+### macOS
+
+On macOS install [Homebrew](https://brew.sh/) system package manager, instructions on website homepage
+
 * Use Homebrew to install `uv` and `just`
   ```sh
   brew install uv just
   ```
-* On first run - can create package skeleton (I did it by hand - hence very slightly different)
+  
+### Windows
+
+On Windows install [just](https://just.systems/man/en/) using Chocolatey or winget
+
+```sh
+choco install just
+winget install --id Casey.Just --exact
+```
+
+or by downloading the .zip file from the GitHub releases [here](https://github.com/casey/just/releases/download/1.40.0/just-1.40.0-x86_64-pc-windows-msvc.zip), and unzipping etc.
+
+Install [uv](https://docs.astral.sh/uv/) from their installation instructions [here](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_2), or using the Chocolatey or winget system package managers.
+
+```sh
+choco install uv
+winget install --id=astral-sh.uv  -e
+```
+
+### Linux
+
+* To install `just` follow the instructions for your distro on the [`just` README](https://github.com/casey/just?tab=readme-ov-file#linux)
+
+* To install `uv` follow the instructions in the [`uv` README](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_1)
+
+Note that `uv` will install Python in the virtual environment.
+
+## Setting up a virtual environment and loading the package in its current state
+
+* Clone the repo and `cd` into it
   ```sh
-  uv init --lib mytestpackage
+  git clone https://github.com/remlapmot/mytestpythonpackage.git
+  cd mytestpythonpackage
   ```
 * Setup a venv using `uv`
   ```sh
@@ -27,15 +59,53 @@ A demo repo to show the structure of a Python package
   ```sh
   uv sync
   ```
+* Setup the package for reload on every file save
+  ```sh
+  uv pip install -e .
+  ```
+* Add more code, then add a test for that code!
+* Run all pytest tests (must have installed package with `just dev` first)
+  ```sh
+  uv run pytest
+  ```
+* Run a single test file (must have installed package first)
+  ```sh
+  uv run pytest tests/test_f.py
+  ```
+* Dectivate the venv
+  ```sh
+  deactivate
+  ```
+
+## How I got the repo to this point
+
+* Create a new Git repository
+* Create the package skeleton (I actually did this manually - hence this repo is very slightly different to what you get with the following command)
+  ```sh
+  uv init --lib mytestpackage
+  ```
+* Setup a venv using `uv`
+  ```sh
+  uv venv --python 3.13
+  ```
+* Activate it
+  ```sh
+  source .venv/bin/activate
+  # On Windows run: .\venv\Scripts\activate
+  ```
+* (Skip this when creating the repo for this first time) Install dependencies (from _pyproject.yaml_)
+  ```sh
+  uv sync
+  ```
 * Setup package for reload on every file save
   ```sh
   uv pip install -e .
   ```
-* Add dependency used within package code
+* Add dependency package used within package code
   ```sh
   uv add DEPENDENCY
   ```
-* Add development dependency
+* Add development dependency (i.e., just needed for testing or documentation)
   ```sh
   uv add --dev pytest
   ```

@@ -6,12 +6,11 @@ A demo repo to show the structure of a Python package
 
 ### macOS
 
-On macOS install [Homebrew](https://brew.sh/) system package manager, instructions on website homepage
+On macOS install [Homebrew](https://brew.sh/) system package manager, instructions on website homepage. Then use Homebrew to install `uv` and `just`
 
-* Use Homebrew to install `uv` and `just`
-  ```sh
-  brew install uv just
-  ```
+```sh
+brew install uv just
+```
   
 ### Windows
 
@@ -37,7 +36,7 @@ winget install --id=astral-sh.uv  -e
 
 * To install `uv` follow the instructions in the [`uv` README](https://docs.astral.sh/uv/getting-started/installation/#__tabbed_1_1)
 
-Note that `uv` will install Python in the virtual environment.
+Note that `uv` will install Python in the virtual environment, so you don't need to worry about installing Python.
 
 ## Setting up a virtual environment and loading the package in its current state
 

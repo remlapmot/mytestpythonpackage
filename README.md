@@ -40,7 +40,7 @@ Note that `uv` will install Python in the virtual environment, so you don't need
 
 ## Setting up a virtual environment and loading the package in its current state
 
-* Clone the repo and `cd` into it
+* Clone the repo (or fork it under your own GitHub account then clone - if you fork amend the username in the URL in the line below) and `cd` into it
   ```sh
   git clone https://github.com/remlapmot/mytestpythonpackage.git
   cd mytestpythonpackage

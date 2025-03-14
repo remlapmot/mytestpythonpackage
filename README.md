@@ -54,7 +54,7 @@ Note that `uv` will install Python in the virtual environment, so you don't need
   source .venv/bin/activate
   # On Windows run: .\venv\Scripts\activate
   ```
-* Install dependencies (uses _uv.lock_ file)
+* Install dependencies (uses _uv.lock_ file - like the old style _requirements.txt_ file; _pyproject.toml_ is modern replacement for _requirements.in_ and _setup.py_)
   ```sh
   uv sync
   ```

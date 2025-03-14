@@ -79,7 +79,7 @@ Note that `uv` will install Python in the virtual environment, so you don't need
 ## How I got the repo to this point
 
 * Create a new Git repository
-* Create the package skeleton (I actually did this manually - hence this repo is very slightly different to what you get with the following command)
+* Create the package skeleton (I actually did this manually - hence this repo is very slightly different to what you get with the following command - difference being source code is in _src/mytestpackage_)
   ```sh
   uv init --lib mytestpackage
   ```

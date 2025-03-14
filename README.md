@@ -92,9 +92,9 @@ Note that `uv` will install Python in the virtual environment, so you don't need
   source .venv/bin/activate
   # On Windows run: .\venv\Scripts\activate
   ```
-* (Skip this when creating the repo for this first time) Install dependencies (from _uv.lock_)
+* Create _uv.lock_ file (or if it exists install dependencies it defines)
   ```sh
-  uv sync
+  uv sync # to create uv.lock can also run: uv lock
   ```
 * Setup package for reload on every file save
   ```sh

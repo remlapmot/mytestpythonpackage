@@ -132,4 +132,4 @@ Note that `uv` will install Python in the virtual environment, so you don't need
   from math import sqrt as _sqrt
   ```
 - [x] Setup linting and formatting ([ruff](https://docs.astral.sh/ruff/))
-- [x] Add some type hints (function arguments and return values, from Python 3.5)
+- [x] Add some type hints (function arguments and return values, available from Python 3.5; and added _py.typed_ file)

@@ -3,7 +3,7 @@ import numpy as np
 
 def myrand(loc=0.0, scale=1.0, size=None):
     """
-    normal(loc=0.0, scale=1.0, size=None)
+    myrand(loc=0.0, scale=1.0, size=None)
 
     Draw random samples from a normal (Gaussian) distribution.
 
@@ -75,8 +75,9 @@ def myrand(loc=0.0, scale=1.0, size=None):
     --------
     Draw samples from the distribution:
 
+    >>> import numpy as np
     >>> mu, sigma = 0, 0.1 # mean and standard deviation
-    >>> s = np.random.normal(mu, sigma, 1000)
+    >>> s = mytestpackage.myrand(mu, sigma, 1000)
 
     Verify the mean and the standard deviation:
 
@@ -99,7 +100,7 @@ def myrand(loc=0.0, scale=1.0, size=None):
     Two-by-four array of samples from the normal distribution with
     mean 3 and standard deviation 2.5:
 
-    >>> np.random.normal(3, 2.5, size=(2, 4))
+    >>> mytestpackage.myrand(3, 2.5, size=(2, 4))
     array([[-4.49401501,  4.00950034, -1.81814867,  7.29718677],   # random
            [ 0.39924804,  4.68456316,  4.99394529,  4.84057254]])  # random
 

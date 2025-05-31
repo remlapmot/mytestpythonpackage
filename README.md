@@ -78,7 +78,7 @@ Note that `uv` will install Python in the virtual environment, so you don't need
 
 ### How to update dependencies (likely once per year before teaching)
 
-* To update packages
+* To update packages (and then commit and push any changes in _uv.lock_)
   ```sh
   uv sync -U
   ```

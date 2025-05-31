@@ -76,6 +76,13 @@ Note that `uv` will install Python in the virtual environment, so you don't need
   deactivate
   ```
 
+### How to update dependencies (likely once per year before teaching)
+
+* To update packages
+  ```sh
+  uv sync -U
+  ```
+
 ## How I got the repo to this point
 
 * Create a new Git repository

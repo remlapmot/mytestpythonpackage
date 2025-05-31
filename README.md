@@ -71,7 +71,7 @@ Note that `uv` will install Python in the virtual environment, so you don't need
   ```sh
   uv run pytest tests/test_f.py
   ```
-* Dectivate the venv
+* Deactivate the venv
   ```sh
   deactivate
   ```
@@ -123,7 +123,7 @@ Note that `uv` will install Python in the virtual environment, so you don't need
   ```sh
   uv run pytest tests/test_f.py
   ```
-* Dectivate the venv
+* Deactivate the venv
   ```sh
   deactivate
   ```

@@ -8,6 +8,8 @@ on:
     types: [published]
   workflow_dispatch:
 
+name: sphinx-site
+
 jobs:
   docs:
     runs-on: ubuntu-latest

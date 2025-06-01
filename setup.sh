@@ -1,5 +1,7 @@
 uv venv --python 3.13
 
+source .venv/bin/activate
+
 # Make package skeleton
 
 # Install dependencies if pyproject.toml exists
@@ -17,3 +19,5 @@ uv run pytest
 # Run a single test file (must have installed package first)
 uv run pytest tests/test_f.py
 python3 -m pytest tests/test_f.py
+
+deactivate

@@ -137,7 +137,7 @@ Note that `uv` will install Python in the virtual environment, so you don't need
 - [x] add a justfile with useful recipes
 - [x] import function from another package and add dependencies to pyproject.toml
 - [x] write helpfile using docstrings (triple quotes `"""`)
-- [ ] accompanying website (options: [Sphinx](https://www.sphinx-doc.org/en/master/), [pdoc](https://pdoc.dev/), [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/))
+- [x] accompanying documentation website (options: [Sphinx](https://www.sphinx-doc.org/en/master/), **[pdoc](https://pdoc.dev/)**, [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), [PyDoc](https://docs.python.org/3/library/pydoc.html), and more!)
 - [x] unexported function: seems to be rarely done
   ```python
   from math import sqrt as _sqrt

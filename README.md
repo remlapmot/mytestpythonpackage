@@ -126,6 +126,7 @@ Note that `uv` will install Python in the virtual environment, so you don't need
 * For the documentation website
   ```sh
   uv add --dev sphinx
+  sphinx-quickstart docs
   ```
 * Deactivate the venv
   ```sh

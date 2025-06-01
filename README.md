@@ -123,7 +123,7 @@ Note that `uv` will install Python in the virtual environment, so you don't need
   ```sh
   uv run pytest tests/test_f.py
   ```
-* Build the docs site
+* Build the docs site (in repo Settings, go to Pages tab, then Build and deployment section and select Source: GitHub Actions)
   ```sh
   uv add --dev pdoc
   ```

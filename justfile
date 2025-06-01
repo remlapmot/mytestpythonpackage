@@ -16,3 +16,5 @@ format:
     uv run ruff format
 update:
     uv sync -U
+end:
+    deactivate

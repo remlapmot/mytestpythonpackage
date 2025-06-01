@@ -1,6 +1,12 @@
 name: "Build sphinx site and push to gh-pages branch"
 on: 
-- pull_request
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  release:
+    types: [published]
+  workflow_dispatch:
 
 jobs:
   docs:

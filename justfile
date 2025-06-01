@@ -2,7 +2,7 @@ venv:
     uv venv --python 3.13
 act:
   source .venv/bin/activate
-deps:
+sync:
     uv sync
 dev:
     uv pip install -e .

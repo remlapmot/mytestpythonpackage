@@ -123,6 +123,10 @@ Note that `uv` will install Python in the virtual environment, so you don't need
   ```sh
   uv run pytest tests/test_f.py
   ```
+* For the documentation website
+  ```sh
+  uv add --dev sphinx
+  ```
 * Deactivate the venv
   ```sh
   deactivate

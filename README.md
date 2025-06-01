@@ -27,7 +27,7 @@ Install [uv](https://docs.astral.sh/uv/) from their installation instructions [h
 
 ```sh
 choco install uv
-winget install --id=astral-sh.uv  -e
+winget install --id=astral-sh.uv -e
 ```
 
 ### Linux
@@ -122,6 +122,10 @@ Note that `uv` will install Python in the virtual environment, so you don't need
 * Run a single test file (must have installed package first)
   ```sh
   uv run pytest tests/test_f.py
+  ```
+* Build the docs site
+  ```sh
+  uv add --dev pdoc
   ```
 * Deactivate the venv
   ```sh

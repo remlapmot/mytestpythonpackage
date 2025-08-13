@@ -14,3 +14,5 @@ format:
     uv run ruff format
 update:
     uv sync -U
+del:
+    rm -rf .venv

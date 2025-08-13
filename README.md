@@ -124,7 +124,7 @@ Note that `uv` will install Python in the virtual environment, so you don't need
   ```sh
   uv add --dev pdoc
   ```
-* Deactivate the venv
+* Deactivate the virtual environment
   ```sh
   deactivate
   ```

@@ -74,6 +74,16 @@ Note that `uv` will install Python in the virtual environment, so you don't need
 
 ### How to update dependencies (likely once per year before teaching)
 
+First if you wish to update the version of Python:
+
+* Delete any virtual environment already created
+  ```sh
+  rm -rf .venv
+  ```
+* Update the version number in _.python-version_ (e.g. to 3.14 or whatever)
+
+Then run
+
 * To update packages (and then commit and push any changes in _uv.lock_)
   ```sh
   uv sync -U

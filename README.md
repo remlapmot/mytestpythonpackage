@@ -45,24 +45,20 @@ Note that `uv` will install Python in the virtual environment, so you don't need
   git clone https://github.com/remlapmot/mytestpythonpackage.git
   cd mytestpythonpackage
   ```
-* Setup a venv using `uv`
+* Setup a virtual environment using `uv` (uses _uv.lock_ file - like the old style _requirements.txt_ file; _pyproject.toml_ is modern replacement for _requirements.in_ and _setup.py_)
   ```sh
-  uv venv --python 3.13
+  uv sync
   ```
 * Activate it
   ```sh
   source .venv/bin/activate
-  # On Windows run: .\venv\Scripts\activate
-  ```
-* Install dependencies (uses _uv.lock_ file - like the old style _requirements.txt_ file; _pyproject.toml_ is modern replacement for _requirements.in_ and _setup.py_)
-  ```sh
-  uv sync
+  # On Windows in Powershell or cmd prompt run: .\venv\Scripts\activate
   ```
 * Setup the package for reload on every file save
   ```sh
   uv pip install -e .
   ```
-* Add more code, then add a test for that code!
+* Add more code, then add a test/s for that code!
 * Run all pytest tests (must have installed package with `just dev` first)
   ```sh
   uv run pytest
@@ -71,7 +67,7 @@ Note that `uv` will install Python in the virtual environment, so you don't need
   ```sh
   uv run pytest tests/test_f.py
   ```
-* Deactivate the venv
+* Deactivate the virtual environment
   ```sh
   deactivate
   ```
@@ -86,7 +82,7 @@ Note that `uv` will install Python in the virtual environment, so you don't need
 ## How I got the repo to this point
 
 * Create a new Git repository
-* Create the package skeleton (I actually did this manually - hence this repo is very slightly different to what you get with the following command - difference being source code is in _src/mytestpackage_)
+* Create the package skeleton (I actually did this manually - hence this repo is very slightly different to what you get with the following command - difference being source code is not in _src/mytestpackage_)
   ```sh
   uv init --lib mytestpackage
   ```
@@ -101,7 +97,8 @@ Note that `uv` will install Python in the virtual environment, so you don't need
   ```
 * Create _uv.lock_ file (or if it exists install dependencies it defines)
   ```sh
-  uv sync # to create uv.lock can also run: uv lock
+  uv sync
+  # to create uv.lock can also run: uv lock
   ```
 * Setup package for reload on every file save
   ```sh

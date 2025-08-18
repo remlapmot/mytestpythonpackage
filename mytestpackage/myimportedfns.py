@@ -1,4 +1,4 @@
-import numpy as np # alternative: from numpy.random import normal
+import numpy as np  # alternative: from numpy.random import normal
 
 
 def myrand(loc=0.0, scale=1.0, size=None):
@@ -105,4 +105,6 @@ def myrand(loc=0.0, scale=1.0, size=None):
            [ 0.39924804,  4.68456316,  4.99394529,  4.84057254]])  # random
 
     """
-    return np.random.normal(loc=loc, scale=scale, size=size) # or with alternative normal(loc=loc, scale=scale, size=size)
+    return np.random.normal(
+        loc=loc, scale=scale, size=size
+    )  # or with alternative normal(loc=loc, scale=scale, size=size)

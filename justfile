@@ -16,3 +16,7 @@ update:
     uv sync -U
 del:
     rm -rf .venv
+
+[macos]
+act:
+    @zsh -is <<< 'source .venv/bin/activate; exec </dev/tty'

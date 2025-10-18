@@ -1,0 +1,31 @@
+name: Python Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12", "3.13", "3.14"] # Define the Python versions to test
+    
+    steps:
+    - uses: actions/checkout@v5
+
+    - name: Set up uv
+      uses: astral-sh/setup-uv@v7
+      with:
+        python-version: ${{ matrix.python-version }} # uv will install this Python version
+
+    - name: Install dependencies
+      run: |
+        uv sync --all-extras
+
+    - name: Run tests with pytest
+      run: |
+        uv run pytest

@@ -151,3 +151,5 @@ Then run
   ```
 - [x] Setup linting and formatting ([ruff](https://docs.astral.sh/ruff/))
 - [x] Add some type hints (function arguments and return values, available from Python 3.5; and added _py.typed_ file)
+- [x] Setup GitHub Actions workflow to build documentation site and deploy to GitHub Pages
+- [x] Setup GitHub Actions workflow to run tests on multiple Python versions on a schedule

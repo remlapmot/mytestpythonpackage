@@ -28,7 +28,7 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v7
       - run: |
-          uv venv --python 3.13
+          uv venv --python 3.14
           source .venv/bin/activate
           uv sync --locked --all-extras --dev
           pdoc -o docs/ mytestpackage

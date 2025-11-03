@@ -1,5 +1,5 @@
 venv:
-    uv venv --python 3.13
+    uv venv --python 3.14
 sync:
     uv sync
 dev:

@@ -31,7 +31,7 @@ jobs:
           uv venv --python 3.14
           source .venv/bin/activate
           uv sync --locked --all-extras --dev
-          pdoc -o docs/ mytestpackage
+          pdoc --math -o docs/ mytestpackage
 
       # ADJUST THIS: install all dependencies (including pdoc)
       # - run: pip install -e .

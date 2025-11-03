@@ -98,7 +98,7 @@ Then run
   ```
 * Setup a venv using `uv`
   ```sh
-  uv venv --python 3.13
+  uv venv --python 3.14
   ```
 * Activate it
   ```sh

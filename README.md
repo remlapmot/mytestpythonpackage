@@ -1,5 +1,7 @@
 # mytestpackage
 
+[![Python Tests](https://github.com/remlapmot/mytestpythonpackage/actions/workflows/tests.yml/badge.svg)](https://github.com/remlapmot/mytestpythonpackage/actions/workflows/tests.yml)
+
 A demo repo to show the structure of a Python package
 
 ## Setting up uv and just

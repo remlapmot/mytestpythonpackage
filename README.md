@@ -141,6 +141,10 @@ Then run
   deactivate
   ```
 
+## Using a different version of Python in a local virtual environment
+
+Delete the _.python-version_ file then create the virtual environment with the desired Python version as usual.
+
 ## TODO
 
 - [x] add a justfile with useful recipes

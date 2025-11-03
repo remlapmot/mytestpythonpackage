@@ -7,5 +7,5 @@ def say_hello() -> None:
     print("Hello, World")
 
 
-# Unsure whether this is required
+# Specifies the functions/methods which imported when package imported with wildcard, e.g., from mytestpackage import *
 __all__ = ["say_goodbye", "say_hello", "f", "myrand"]

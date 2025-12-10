@@ -86,7 +86,7 @@ First if you wish to update the version of Python:
 
 Then run
 
-* To update packages (and then commit and push any changes in _uv.lock_)
+* To update packages (and then commit and push any changes in _uv.lock_) and to change the constraints in _pyproject.toml_ either edit manually or specify constraint by rerunning `uv add` with the new constraint
   ```sh
   uv sync -U
   ```

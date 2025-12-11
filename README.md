@@ -175,3 +175,7 @@ Delete the _.python-version_ file then create the virtual environment with the d
   uv pip install mytestpackage[output]
   ```
 - [] Add a CHANGELOG or whatever is common practice in the Python community
+
+### Things which are unclear
+
+* Should the _uv.lock_ file be committed into the repo? For a standard analysis project it definitely should. But maybe not for package development.

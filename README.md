@@ -160,7 +160,7 @@ Delete the _.python-version_ file then create the virtual environment with the d
 - [x] Setup GitHub Actions workflow to build documentation site and deploy to GitHub Pages
 - [x] Setup GitHub Actions workflow to run tests on multiple Python versions on a schedule
 - [ ] Add a dataset to the package in a data directory including a function to load the data
-- [ ] Add an optional dependency group to the pyproject.toml file.
+- [ ] Add an optional dependency group to the _pyproject.toml_ file.
   This is achieved as follows ([uv docs](https://docs.astral.sh/uv/concepts/projects/dependencies/#optional-dependencies))
   ```toml
   [project.optional-dependencies]
@@ -170,7 +170,7 @@ Delete the _.python-version_ file then create the virtual environment with the d
       "tabulate",
   ]
   ```
-  To install run
+  To install the optional dependencies a user can run
   ```sh
   uv pip install mytestpackage[output]
   ```

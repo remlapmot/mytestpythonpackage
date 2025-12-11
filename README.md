@@ -178,4 +178,4 @@ Delete the _.python-version_ file then create the virtual environment with the d
 
 ### Things which are unclear
 
-* Should the _uv.lock_ file be committed into the repo? For a standard analysis project it definitely should. But maybe not for package development.
+* Should the _uv.lock_ file be committed into the repo? For a standard analysis project it definitely should. But maybe not for package development (note to self: remove `--locked` flag from `uv sync` call in _docs.yml_ if delete this).

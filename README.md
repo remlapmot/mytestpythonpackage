@@ -159,8 +159,8 @@ Delete the _.python-version_ file then create the virtual environment with the d
 - [x] Add some type hints (function arguments and return values, available from Python 3.5; and added _py.typed_ file)
 - [x] Setup GitHub Actions workflow to build documentation site and deploy to GitHub Pages
 - [x] Setup GitHub Actions workflow to run tests on multiple Python versions on a schedule
-- [] Add a dataset to the package in a data directory including a function to load the data
-- [] Add an optional dependency group to the pyproject.toml file.
+- [ ] Add a dataset to the package in a data directory including a function to load the data
+- [ ] Add an optional dependency group to the pyproject.toml file.
   This is achieved as follows ([uv docs](https://docs.astral.sh/uv/concepts/projects/dependencies/#optional-dependencies))
   ```toml
   [project.optional-dependencies]
@@ -174,7 +174,7 @@ Delete the _.python-version_ file then create the virtual environment with the d
   ```sh
   uv pip install mytestpackage[output]
   ```
-- [] Add a CHANGELOG or whatever is common practice in the Python community
+- [ ] Add a CHANGELOG or whatever is common practice in the Python community
 
 ### Things which are unclear
 

@@ -18,8 +18,10 @@ Issues = "https://github.com/remlapmot/mytestpythonpackage/issues"
 [dependency-groups]
 dev = [
     "pdoc>=14.7.0",
+    "pygments>=2.19.3",
     "pytest>=8.3.4",
     "ruff>=0.9.7",
+    "wheel>=0.46.2",
 ]
 
 [build-system]

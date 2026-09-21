@@ -1,5 +1,5 @@
-from .myfunctions import say_goodbye as say_goodbye
 from .myfunctions import f as f
+from .myfunctions import say_goodbye as say_goodbye
 from .myimportedfns import myrand as myrand
 
 
@@ -8,4 +8,4 @@ def say_hello() -> None:
 
 
 # Specifies the functions/methods which imported when package imported with wildcard, e.g., from mytestpackage import *
-__all__ = ["say_goodbye", "say_hello", "f", "myrand"]
+__all__ = ["f", "myrand", "say_goodbye", "say_hello"]

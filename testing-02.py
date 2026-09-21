@@ -1,6 +1,4 @@
-from mytestpackage import say_hello
-from mytestpackage import say_goodbye
-from mytestpackage import f
+from mytestpackage import f, say_goodbye, say_hello
 
 say_hello()
 say_goodbye()

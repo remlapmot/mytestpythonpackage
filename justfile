@@ -10,7 +10,7 @@ check:
     uv run ruff check
 fix:
     uv run ruff check --fix
-format:
+format: check
     uv run ruff format
 update:
     uv sync -U
